@@ -68,10 +68,10 @@ class GoogleWeatherAPI(object):
       weather = day.find("img").attrs["alt"]
       temp = day.findAll("span", {"class": "wob_t"})
 
-      max_temp_f = temp[0].text
-      max_temp_c = temp[1].text
-      min_temp_f = temp[2].text
-      min_temp_c = temp[3].text
+      max_temp_f = float(temp[0].text)
+      max_temp_c = float(temp[1].text)
+      min_temp_f = float(temp[2].text)
+      min_temp_c = float(temp[3].text)
 
       next_days.append({'name': day_name,
                         'weather': weather,
