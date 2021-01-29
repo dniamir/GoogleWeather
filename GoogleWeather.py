@@ -14,7 +14,7 @@ class GoogleWeatherAPI(object):
 	Data is saved as a class variable. The highest level in this dictionary is the
 	region name. The next level down is also a dictionary with all recently saved
 	data"""
-	USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"
+	USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36"
 	LANGUAGE = "en-US,en;q=0.5"
 	URL = "https://www.google.com/search?lr=lang_en&ie=UTF-8&q=weather"
 
